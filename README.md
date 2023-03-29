@@ -1,4 +1,6 @@
+# Functions to work with github
 …or create a new repository on the command line
+
 echo "# gitcommands" >> README.md
 git init
 git add README.md
