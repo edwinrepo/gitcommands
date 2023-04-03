@@ -74,6 +74,11 @@ Git clone es para obtener un nuevo repositorio
 ```sh
 git clone {direccion_del_repositorio}
 ```
+Para conocer el repositorio origin
+
+```sh
+git remote show origin
+```
 
 ## Para recuperar archivos
 
