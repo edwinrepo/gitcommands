@@ -84,37 +84,48 @@ git remote show origin
 
 ### Para conocer los commit que se han realizado
 
+```sh
 git log --pretty=oneline
+```
 
 ### Para devolverse a algun commit se usa el comando
 
+```
 git reset --soft 9d645d084d541c295a0e206c619594e3dc90b7ab # El número que está acá proviene del git log
-
+```
 ### Para regresar es con
-
+```sh
 git revert 9d645d084d541c295a0e206c619594e3dc90b7ab
-
+```
 ## Para crear una rama
 
 Si se crea una nueva rama todos los archivos se crean como en una nueva sesión
-
+```sh
 git branch nueva_rama
-
+```
 ### Para saber cuántas ramas hay
+```sh
 git branch -v
-
+```
 ### Para cambiar de rama:
+```sh
 git checkout nueva_rama
-
+```
 ### Para unir dos ramas
 se cambia a la rama que se quiera hacer el merge
+```sh
 git checkout master
+```
 y luego se usa:
+```sh
 git merge nueva_rama
+```
 
 ### Para borrar dos ramas
 Se elimina una rama
+```sh
 git branch -D nueva_rama # Se borra local
 git push origin --delete nueva_rama # se borra en github
+```
 
 
