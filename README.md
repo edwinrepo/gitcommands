@@ -111,6 +111,12 @@ git branch -v
 ```sh
 git branch -a
 ```
+
+Si no se pueden ver las ramas, sólo la principal se ejecuta
+
+```sh
+git pull all
+```
 ### Para cambiar de rama:
 ```sh
 git checkout nueva_rama
