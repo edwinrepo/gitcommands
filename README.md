@@ -117,6 +117,35 @@ Si no se pueden ver las ramas, sólo la principal se ejecuta
 ```sh
 git pull all
 ```
+
+### Cuando se clona un repo y tiene varias ramas
+Tomado de: https://stackoverflow.com/questions/67699/how-do-i-clone-all-remote-branches
+
+```sh
+git branch
+* master
+```
+But there are other branches hiding in your repository! See these using the -a flag:
+```sh
+$ git branch -a
+* master
+  remotes/origin/HEAD
+  remotes/origin/master
+  remotes/origin/v1.0-stable
+  remotes/origin/experimental
+```
+To take a quick peek at an upstream branch, check it out directly:
+```sh
+$ git checkout origin/experimental
+```
+To work on that branch, create a local tracking branch, which is done automatically by:
+```sh
+$ git checkout experimental
+```
+Branch experimental set up to track remote branch experimental from origin.
+Switched to a new branch 'experimental'
+
+
 ### Para cambiar de rama:
 ```sh
 git checkout nueva_rama
