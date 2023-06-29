@@ -167,4 +167,8 @@ git branch -D nueva_rama # Se borra local
 git push origin --delete nueva_rama # se borra en github
 ```
 
-
+### Borrar Folder/carpeta
+```sh
+rm -rf configurarGitEnLinux/.git
+rm -r configurarGitEnLinux
+```
