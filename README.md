@@ -107,6 +107,10 @@ git branch nueva_rama
 ```sh
 git branch -v
 ```
+ó
+```sh
+git branch -a
+```
 ### Para cambiar de rama:
 ```sh
 git checkout nueva_rama
